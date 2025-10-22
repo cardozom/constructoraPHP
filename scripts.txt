@@ -1,0 +1,12 @@
+INSERT INTO `usuarios`( `Usuario`, `Clave`, `EmpresaId`, `Perfil`) VALUES ('usuario1','123456', 1 ,'user')
+
+INSERT INTO `usuarios`( `Usuario`, `Clave`, `EmpresaId`, `Perfil`) VALUES ('usuarioadm','123456', 1 ,'admin')
+
+SELECT `UsuarioId`, Usuario, us.EmpresaId,  emp.Empresa , Perfil FROM usuarios us 
+inner join empresaconstructora emp
+on us.empresaId = emp.EmpresaId
+WHERE Usuario = 'usuario1' and Clave = '123456';
+
+INSERT INTO `tblcondicioniva`( `CondicionIva`) VALUES ('Resp. Inscripto');
+INSERT INTO `tblcondicioniva`( `CondicionIva`) VALUES ('Monotributista');
+INSERT INTO `tblcondicioniva`( `CondicionIva`) VALUES ('Cons. Final');
