@@ -22,11 +22,11 @@ if (isset($_SESSION["UsuarioId"])) {
         <form id="loginForm" method="POST" action="validarusuario.php">
             <div class="mb-3">
                 <label class="form-label">Usuario</label>
-                <input type="text" autocomplete="off" class="form-control" name="usuario" required>
+                <input type="text" autocomplete="off" placeholder="Ingrese usuario" class="form-control" name="usuario" required>
             </div>
             <div class="mb-3">
                 <label class="form-label">Clave</label>
-                <input type="password" autocomplete="off" class="form-control" name="clave" required>
+                <input type="password" autocomplete="off" class="form-control" placeholder="Ingrese clave" name="clave" required>
             </div>
             <button type="submit" class="btn btn-primary w-100">Ingresar</button>
         </form>

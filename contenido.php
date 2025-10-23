@@ -35,7 +35,7 @@ $id = $_GET["id"] ?? 0;
         break;
     case 42:
         $_SESSION["TipoCosto"] = "CD";
-        include 'tiposcostoobra.php';
+        include 'costosdirectosobra.php';
         break;
     case 43:
         $_SESSION["TipoCosto"] = "CI";
