@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 require_once "conexion.php";
 
 if (!isset($_SESSION["EmpresaId"]) || !isset($_SESSION["UsuarioId"])) {
